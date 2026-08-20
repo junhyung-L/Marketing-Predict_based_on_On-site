@@ -1,0 +1,107 @@
+{
+  "source": "result_*.json:all.best_params",
+  "trials": 10,
+  "epochs": 2,
+  "models": {
+    "RF": {
+      "fixed_all_best_params": {
+        "pos_weight": 1.0059696244768448,
+        "n_estimators": 200,
+        "max_depth": 16
+      },
+      "missing_only_best_params": {
+        "min_samples_split": 2,
+        "min_samples_leaf": 2
+      },
+      "validation_pr_auc": 0.6816156772496462
+    },
+    "MLP": {
+      "fixed_all_best_params": {
+        "pos_weight": 14.126101375282198,
+        "hidden_dim": 64,
+        "lr": 0.008597863855323283,
+        "dropout": 0.3962968545354246
+      },
+      "missing_only_best_params": {
+        "n_layers": 3,
+        "l2": 0.003788145521097122,
+        "batch_size": 128
+      },
+      "validation_pr_auc": 0.6937457588322735
+    },
+    "CNN": {
+      "fixed_all_best_params": {
+        "pos_weight": 2.3109194364678345,
+        "num_filters": 128,
+        "lr": 0.00853034202936806,
+        "dropout": 0.16970609854442822
+      },
+      "missing_only_best_params": {
+        "kernel_size": 3,
+        "pool_size": 3,
+        "num_conv_layers": 1,
+        "l2": 1.6193110912440743e-05,
+        "batch_size": 128
+      },
+      "validation_pr_auc": 0.6641340910716353
+    },
+    "RNN": {
+      "fixed_all_best_params": {
+        "pos_weight": 2.2272196620276747,
+        "hidden_dim": 96,
+        "num_layers": 2,
+        "lr": 0.007491421003810144,
+        "dropout": 0.11609455438801682
+      },
+      "missing_only_best_params": {
+        "l2": 4.656804637919569e-05,
+        "batch_size": 32
+      },
+      "validation_pr_auc": 0.6995983860164595
+    },
+    "LSTM": {
+      "fixed_all_best_params": {
+        "pos_weight": 1.5642024418779221,
+        "hidden_dim": 64,
+        "num_layers": 2,
+        "lr": 0.0060389264225586565,
+        "dropout": 0.14786809026946124
+      },
+      "missing_only_best_params": {
+        "l2": 0.001146839870575158,
+        "batch_size": 32
+      },
+      "validation_pr_auc": 0.6954370300200832
+    },
+    "CNN-LSTM": {
+      "fixed_all_best_params": {
+        "pos_weight": 2.7295633269204744,
+        "filters": 32,
+        "lstm_units": 96,
+        "lr": 0.008661173591489274,
+        "dropout": 0.2009426731154088
+      },
+      "missing_only_best_params": {
+        "kernel_size": 3,
+        "pool_size": 4,
+        "l2": 2.0402247877617882e-05,
+        "batch_size": 64
+      },
+      "validation_pr_auc": 0.6050058768656277
+    },
+    "RNN-LSTM": {
+      "fixed_all_best_params": {
+        "pos_weight": 3.3166707993289486,
+        "rnn_units": 128,
+        "lstm_units": 32,
+        "lr": 0.003182923396179607,
+        "dropout": 0.22877387637809685
+      },
+      "missing_only_best_params": {
+        "l2": 2.7559267640273738e-05,
+        "batch_size": 128
+      },
+      "validation_pr_auc": 0.698791393096461
+    }
+  }
+}

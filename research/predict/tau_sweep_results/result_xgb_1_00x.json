@@ -1,0 +1,34 @@
+{
+  "all": {
+    "num_features": 64,
+    "optimal_threshold": 0.9976691007614136,
+    "accuracy": 0.9981012067471164,
+    "precision": 0.31839708561020036,
+    "recall": 0.4721772015126958,
+    "f1_score": 0.3803307223672759,
+    "f2_score": 0.4305842940191152,
+    "roc_auc": 0.9972950693972301,
+    "pr_auc": 0.3565814438872695,
+    "top1000_hits": 491,
+    "top2000_hits": 737,
+    "top3000_hits": 922,
+    "best_params": {
+      "scale_pos_weight": 82.47384712512579,
+      "n_estimators": 250,
+      "learning_rate": 0.27471174867009746,
+      "max_depth": 7,
+      "min_child_weight": 7,
+      "subsample": 0.6903526831183043,
+      "colsample_bytree": 0.9626553602630183,
+      "gamma": 4.174001205479248,
+      "reg_alpha": 0.0010947947164262203,
+      "reg_lambda": 0.03486808367826225
+    },
+    "confusion_matrix": {
+      "tn": 1496178,
+      "fp": 1871,
+      "fn": 977,
+      "tp": 874
+    }
+  }
+}

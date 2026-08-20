@@ -1,1 +1,10 @@
-﻿data/ecommerce_journey_data.zip
+data/ecommerce_journey_data.zip
+
+# Local research artifacts: too large for Git and not required to review code.
+research/predict/tau_sweep_data/
+research/predict/tau_sweep_results/models/
+*.parquet
+*.pkl
+.ipynb_checkpoints/
+__pycache__/
+.repo-analysis/

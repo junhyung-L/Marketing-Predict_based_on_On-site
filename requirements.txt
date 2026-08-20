@@ -1,0 +1,11 @@
+# Package names were extracted from imports. Original package versions are not recorded.
+# Pin them from the environment that produced the baseline before claiming exact reproduction.
+numpy
+pandas
+pyarrow
+scikit-learn
+xgboost
+optuna
+torch
+pytorch-tabnet
+numba
